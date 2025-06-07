@@ -1,25 +1,29 @@
-// src/App.tsx
-// import React from 'react';
-// import Header from './components/Header';
-import Top from  './components/Top'
-// import Footer from './components/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// function App() {
-//   return (
-//     <div>
-//       <Header />
-//       <top />
-//       <Footer />
-//     </div>
-//   );
-// }
+import CardSection from './CardSection';
+import Page1 from './components/task/index';
+import Page2 from './components/todo/index';
+
 function App() {
-  // return <p>これからTODOアプリを実装します！</p>;
   return (
-    <div>
-      <Top />
-    </div>
+    <Router>
+      <div>
+        <Header />
+        
+        <Routes>
+          <Route path="/" element={<CardSection />} />
+          <Route path="/page1" element={<Page1 />} />
+          <Route path="/page2" element={<Page2 />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
+
