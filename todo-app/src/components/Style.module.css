@@ -1,0 +1,147 @@
+.header {
+    position:initial;
+    max-width: 1240px;
+    width: calc(100% -24px -24px);
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 89.5825px;
+    overflow: visible !important;
+    top: 0;
+}
+.header_font {
+    margin: 0;
+    font-size: 40px;
+    top:1%;
+    font-family: "Barlow Semi Condensed";
+}
+.header_menu {
+    box-sizing: border-box;
+    display: block;
+    width: 60%;
+}
+.header_menu_ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header_menu_li {
+    display: inline-block;
+    list-style: none;
+    height: 20px;
+    margin-right: 32px;
+    align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo_img {
+  height: 80px;
+  width: 80px;
+}
+
+.logo_text {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: #2e7d32;
+}
+
+
+.footer {
+    position:absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer_font {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer_links {
+  margin-top: 8px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer_links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer_links a:hover {
+  text-decoration: underline;
+}
+
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 14%;
+    background-color: #f5fdee;
+    z-index: -1;
+}
+
+.text {
+    font-size: 16px;
+    color: #333;
+}
+
+.card_container {
+  display: flex;
+  flex-wrap: wrap; /* 折り返し */
+  justify-content: center;
+  gap: 24px;
+  margin-top: 48px;
+  max-width: 900px; /* 最大3つ横に並べる */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  flex: 0 0 calc(33.333% - 24px); /* 3列 */
+  max-width: 300px;
+  height: 200px;
+  border-radius: 16px;
+  background-color: #a0e7e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
