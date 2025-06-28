@@ -1,14 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from './components/Style.module.css';
-
+import styles from './style/Style.module.css'
 const cards = [
-    { title: "Task", to: "/components/task/index" },
-    { title: "Todo", to: "/components/todo/index" },
+    { title: "Task", to: "/pages/task" },
+    { title: "Todo", to: "/pages/todo" },
     // 以降はページがないので、仮でTODOページを表示
-    { title: "memo", to: "/components/todo/index" },
-    { title: "天気", to: "/components/todo/index" },
-    { title: "News", to: "/components/todo/index" },
+    { title: "memo", to: "/pages/todo" },
+    { title: "天気", to: "/pages/todo" },
+    { title: "News", to: "/pages/todo" },
 ];
 
 const CardSection: React.FC = () => {

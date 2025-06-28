@@ -1,4 +1,4 @@
-import Style from './Style.module.css';
+import Style from '../style/Style.module.css';
 
 function Top() {
   return (
