@@ -3,8 +3,8 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import CardSection from './CardSection';
-import Page1 from './components/task/index';
-import Page2 from './components/todo/index';
+import Page1 from './pages/Task';
+import Page2 from './pages/Todo';
 
 function App() {
   return (
